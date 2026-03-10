@@ -987,3 +987,7 @@ img, svg { display: block; max-width: 100%; }
 
   .hero__title { font-size: var(--text-3xl); }
 }
+
+.rightmove-link {
+  text-decoration: underline;
+}

@@ -65,7 +65,7 @@
           The team of the Darsham Services Hub (DSH) works with farmers and landowners in East Suffolk, wishing to diversify and help to meet the housing needs of Sizewell C. We help create custom housing solutions by leveraging industry relationships, expertise and collective purchasing. Our project management extends to deliver operational support for leasing periods and ongoing maintenance and hotel operations.
         </p>
         <div class="hero__actions">
-          <a href="#accommodation" class="btn btn--primary">
+          <a href="#parking" class="btn btn--primary">
             <span>Explore Solutions</span>
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -314,177 +314,7 @@
       <div class="content-block content-block--split" data-animate="fade-up" data-delay="100">
         <div class="content-block__visual">
           <div class="geo-illustration geo-illustration--parking">
-            <svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid meet">
-              <!-- A12 Roundabout & Park-and-Ride junction plan -->
-              <defs>
-                <pattern id="parkingGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <line x1="0" y1="0" x2="40" y2="0" stroke="var(--color-primary)" stroke-width="0.3" opacity="0.08"/>
-                  <line x1="0" y1="0" x2="0" y2="40" stroke="var(--color-primary)" stroke-width="0.3" opacity="0.08"/>
-                </pattern>
-                <!-- Hedge/planting pattern -->
-                <pattern id="hedging" width="6" height="6" patternUnits="userSpaceOnUse">
-                  <circle cx="3" cy="3" r="2" fill="var(--color-primary)" opacity="0.12"/>
-                </pattern>
-              </defs>
-
-              <!-- Background -->
-              <rect width="480" height="360" fill="var(--color-bg-card)" rx="8"/>
-              <rect width="480" height="360" fill="url(#parkingGrid)"/>
-
-              <!-- ═══ GREEN LANDSCAPING ZONES ═══ -->
-              <!-- Central roundabout green island -->
-              <circle cx="290" cy="175" r="42" fill="var(--color-primary)" opacity="0.04"/>
-
-              <!-- Left-side green corridor (Willow Marsh Lane verge) -->
-              <path d="M 55,0 Q 60,60 55,120 Q 50,170 60,220 Q 65,260 60,310 L 30,310 Q 35,260 30,220 Q 25,170 30,120 Q 35,60 30,0 Z" fill="var(--color-primary)" opacity="0.04"/>
-
-              <!-- Bottom-left green triangle -->
-              <path d="M 0,310 Q 40,290 100,285 Q 140,283 180,290 L 180,360 L 0,360 Z" fill="var(--color-primary)" opacity="0.05"/>
-
-              <!-- Top-right green area -->
-              <path d="M 350,0 Q 370,40 380,80 Q 390,50 410,30 L 440,0 Z" fill="var(--color-primary)" opacity="0.04"/>
-
-              <!-- Planting areas around roundabout -->
-              <ellipse cx="230" cy="140" rx="25" ry="18" fill="url(#hedging)" opacity="0.6"/>
-              <ellipse cx="350" cy="140" rx="20" ry="15" fill="url(#hedging)" opacity="0.6"/>
-              <ellipse cx="350" cy="210" rx="22" ry="16" fill="url(#hedging)" opacity="0.6"/>
-              <ellipse cx="230" cy="215" rx="20" ry="14" fill="url(#hedging)" opacity="0.6"/>
-
-              <!-- ═══ A12 MAIN ROAD (bottom, running left-right) ═══ -->
-              <path d="M 0,310 Q 60,308 120,305 Q 180,300 230,290 Q 260,284 275,275" fill="none" stroke="var(--color-text-muted)" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
-              <!-- A12 right side (exits east) -->
-              <path d="M 380,260 Q 410,275 440,290 Q 460,300 480,310" fill="none" stroke="var(--color-text-muted)" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
-              <!-- Road surface markings (center dashes) -->
-              <path d="M 0,310 Q 60,308 120,305 Q 180,300 230,290 Q 260,284 275,275" fill="none" stroke="var(--color-accent)" stroke-width="1" stroke-dasharray="8 6" opacity="0.3"/>
-              <path d="M 380,260 Q 410,275 440,290 Q 460,300 480,310" fill="none" stroke="var(--color-accent)" stroke-width="1" stroke-dasharray="8 6" opacity="0.3"/>
-              <!-- A12 label -->
-              <text x="35" y="330" fill="var(--color-text-muted)" font-size="12" font-family="Space Grotesk" font-weight="600" opacity="0.5">A12</text>
-
-              <!-- ═══ WILLOW MARSH LANE (left, running top-bottom) ═══ -->
-              <path d="M 42,0 Q 45,50 42,100 Q 38,150 42,200 Q 48,240 60,270 Q 70,285 95,300" fill="none" stroke="var(--color-text-muted)" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
-              <!-- Lane label (rotated) -->
-              <text x="22" y="150" fill="var(--color-text-muted)" font-size="8" font-family="Space Grotesk" font-weight="400" opacity="0.35" transform="rotate(-88 22 150)">Willow Marsh Lane</text>
-
-              <!-- ═══ ROUNDABOUT ═══ -->
-              <!-- Outer ring (road surface) -->
-              <circle cx="290" cy="175" r="62" fill="none" stroke="var(--color-text-muted)" stroke-width="5" opacity="0.25"/>
-              <!-- Coloured surfacing (proposed) — pink/magenta hatched band -->
-              <circle cx="290" cy="175" r="62" fill="none" stroke="var(--color-accent)" stroke-width="2" opacity="0.15" stroke-dasharray="3 3"/>
-              <!-- Inner circle (traffic island) -->
-              <circle cx="290" cy="175" r="38" fill="var(--color-primary)" opacity="0.06" stroke="var(--color-primary)" stroke-width="1.2" opacity="0.25"/>
-              <!-- Centre planting -->
-              <circle cx="290" cy="175" r="25" fill="var(--color-primary)" opacity="0.05"/>
-              <circle cx="290" cy="175" r="25" fill="url(#hedging)" opacity="0.5"/>
-              <!-- Inner island edge -->
-              <circle cx="290" cy="175" r="18" fill="var(--color-primary)" opacity="0.03" stroke="var(--color-primary)" stroke-width="0.6" opacity="0.2"/>
-
-              <!-- Directional arrows on roundabout -->
-              <g opacity="0.25">
-                <!-- Top arc arrow -->
-                <path d="M 260,118 Q 265,115 272,113" fill="none" stroke="var(--color-text)" stroke-width="1.2"/>
-                <polygon points="272,110 276,115 270,115" fill="var(--color-text)"/>
-                <!-- Right arc arrow -->
-                <path d="M 348,148 Q 352,155 354,162" fill="none" stroke="var(--color-text)" stroke-width="1.2"/>
-                <polygon points="356,162 352,167 350,160" fill="var(--color-text)"/>
-                <!-- Bottom arc arrow -->
-                <path d="M 318,232 Q 312,235 306,236" fill="none" stroke="var(--color-text)" stroke-width="1.2"/>
-                <polygon points="304,239 300,234 307,234" fill="var(--color-text)"/>
-                <!-- Left arc arrow -->
-                <path d="M 232,200 Q 228,193 228,186" fill="none" stroke="var(--color-text)" stroke-width="1.2"/>
-                <polygon points="225,186 230,181 231,188" fill="var(--color-text)"/>
-              </g>
-
-              <!-- ═══ APPROACH ROADS TO ROUNDABOUT ═══ -->
-              <!-- North approach (from top) -->
-              <path d="M 280,0 Q 282,40 284,80 Q 286,100 288,113" fill="none" stroke="var(--color-text-muted)" stroke-width="4.5" stroke-linecap="round" opacity="0.22"/>
-              <!-- Splitter island (north) -->
-              <ellipse cx="285" cy="100" rx="3" ry="10" fill="var(--color-primary)" opacity="0.12" stroke="var(--color-primary)" stroke-width="0.6" opacity="0.2"/>
-
-              <!-- South-east approach (to A12 east) -->
-              <path d="M 340,225 Q 355,242 375,255 Q 380,258 380,260" fill="none" stroke="var(--color-text-muted)" stroke-width="4.5" stroke-linecap="round" opacity="0.22"/>
-
-              <!-- South-west approach (to A12 west, Darsham side) -->
-              <path d="M 255,228 Q 230,252 200,272 Q 170,288 140,298" fill="none" stroke="var(--color-text-muted)" stroke-width="4.5" stroke-linecap="round" opacity="0.22"/>
-              <!-- Splitter island (south-west) -->
-              <ellipse cx="210" cy="262" rx="8" ry="3" fill="var(--color-primary)" opacity="0.12" stroke="var(--color-primary)" stroke-width="0.6" opacity="0.2" transform="rotate(-40 210 262)"/>
-
-              <!-- West approach (from Willow Marsh Lane) -->
-              <path d="M 95,200 Q 140,195 180,190 Q 210,185 228,180" fill="none" stroke="var(--color-text-muted)" stroke-width="3.5" stroke-linecap="round" opacity="0.2"/>
-
-              <!-- ═══ FARM TRACK (top-right, dashed) ═══ -->
-              <path d="M 380,80 Q 400,100 420,130 Q 435,155 440,175 Q 445,195 480,210" fill="none" stroke="var(--color-text-muted)" stroke-width="1.5" stroke-dasharray="5 4" stroke-linecap="round" opacity="0.18"/>
-              <text x="400" y="100" fill="var(--color-text-muted)" font-size="7" font-family="Space Grotesk" font-weight="400" opacity="0.3" transform="rotate(45 400 100)">Farm Track</text>
-
-              <!-- ═══ UNDERPASS (left side) ═══ -->
-              <g transform="translate(65, 105)">
-                <rect x="-10" y="-5" width="20" height="10" rx="2" fill="var(--color-secondary)" opacity="0.1" stroke="var(--color-secondary)" stroke-width="0.8" opacity="0.3"/>
-                <line x1="-8" y1="0" x2="8" y2="0" stroke="var(--color-secondary)" stroke-width="0.8" opacity="0.4"/>
-                <text x="0" y="16" text-anchor="middle" fill="var(--color-secondary)" font-size="6.5" font-family="Space Grotesk" font-weight="400" opacity="0.45">Underpass</text>
-              </g>
-
-              <!-- ═══ EXISTING FARM ACCESS ═══ -->
-              <path d="M 30,240 Q 50,235 80,228 Q 100,222 110,215" fill="none" stroke="var(--color-text-muted)" stroke-width="1.5" stroke-dasharray="4 3" stroke-linecap="round" opacity="0.15"/>
-              <text x="15" y="255" fill="var(--color-text-muted)" font-size="6.5" font-family="Space Grotesk" font-weight="400" opacity="0.3">Farm Access</text>
-
-              <!-- ═══ PROPOSED FEATURES CALLOUTS ═══ -->
-
-              <!-- Proposed diversion to tie back to existing (top-left) -->
-              <g opacity="0.35">
-                <path d="M 85,25 Q 100,30 115,40 Q 130,50 140,65" fill="none" stroke="var(--color-secondary)" stroke-width="1" stroke-dasharray="3 2"/>
-                <circle cx="85" cy="25" r="2.5" fill="var(--color-secondary)"/>
-                <text x="70" y="20" fill="var(--color-secondary)" font-size="6" font-family="Space Grotesk" font-weight="400" text-anchor="middle">Proposed</text>
-                <text x="70" y="28" fill="var(--color-secondary)" font-size="6" font-family="Space Grotesk" font-weight="400" text-anchor="middle">Diversion</text>
-              </g>
-
-              <!-- Proposed guardrail marker (left) -->
-              <g opacity="0.3">
-                <line x1="48" y1="180" x2="55" y2="210" stroke="var(--color-accent)" stroke-width="1.5"/>
-                <text x="12" y="198" fill="var(--color-accent)" font-size="6" font-family="Space Grotesk" font-weight="400">Guardrail</text>
-              </g>
-
-              <!-- Proposed headwall for drainage (bottom) -->
-              <g opacity="0.3">
-                <rect x="185" y="310" width="12" height="5" rx="1" fill="var(--color-secondary)" opacity="0.3" stroke="var(--color-secondary)" stroke-width="0.6"/>
-                <text x="198" y="325" fill="var(--color-secondary)" font-size="5.5" font-family="Space Grotesk" font-weight="400">Headwall</text>
-              </g>
-
-              <!-- Proposed gully (bottom-right) -->
-              <g opacity="0.3">
-                <circle cx="420" cy="315" r="3" fill="none" stroke="var(--color-secondary)" stroke-width="0.8"/>
-                <line x1="419" y1="313" x2="421" y2="317" stroke="var(--color-secondary)" stroke-width="0.6"/>
-                <text x="430" y="318" fill="var(--color-secondary)" font-size="5.5" font-family="Space Grotesk" font-weight="400">Gully</text>
-              </g>
-
-              <!-- ═══ TRAFFIC ISLAND DETAILS ═══ -->
-              <!-- Splitter island markers on approaches -->
-              <ellipse cx="330" cy="130" rx="3.5" ry="9" fill="var(--color-primary)" opacity="0.1" stroke="var(--color-primary)" stroke-width="0.6" opacity="0.2" transform="rotate(30 330 130)"/>
-              <ellipse cx="255" cy="225" rx="3.5" ry="8" fill="var(--color-primary)" opacity="0.1" stroke="var(--color-primary)" stroke-width="0.6" opacity="0.2" transform="rotate(-30 255 225)"/>
-
-              <!-- ═══ LEGEND (bottom-right corner) ═══ -->
-              <g transform="translate(370, 330)">
-                <rect x="0" y="0" width="100" height="28" rx="3" fill="var(--color-bg-card)" stroke="var(--color-border-strong)" stroke-width="0.5" opacity="0.8"/>
-                <line x1="10" y1="10" x2="25" y2="10" stroke="var(--color-text-muted)" stroke-width="2.5" opacity="0.3"/>
-                <text x="30" y="13" fill="var(--color-text-muted)" font-size="5.5" font-family="Space Grotesk" opacity="0.5">Existing Road</text>
-                <line x1="10" y1="21" x2="25" y2="21" stroke="var(--color-accent)" stroke-width="1" stroke-dasharray="3 2" opacity="0.4"/>
-                <text x="30" y="24" fill="var(--color-text-muted)" font-size="5.5" font-family="Space Grotesk" opacity="0.5">Proposed Work</text>
-              </g>
-
-              <!-- ═══ LABELS ═══ -->
-              <!-- Roundabout label -->
-              <text x="290" y="178" text-anchor="middle" fill="var(--color-primary)" font-size="7.5" font-family="Space Grotesk" font-weight="600" opacity="0.45">Roundabout</text>
-
-              <!-- Section title -->
-              <text x="240" y="348" text-anchor="middle" fill="var(--color-primary)" font-size="11" font-family="Space Grotesk" font-weight="600" opacity="0.55">A12 Roundabout &amp; Access Plan</text>
-
-              <!-- North arrow -->
-              <g transform="translate(445, 30)">
-                <circle cx="0" cy="0" r="12" fill="none" stroke="var(--color-border-strong)" stroke-width="0.5"/>
-                <line x1="0" y1="-10" x2="0" y2="10" stroke="var(--color-text-muted)" stroke-width="0.4" opacity="0.3"/>
-                <line x1="-10" y1="0" x2="10" y2="0" stroke="var(--color-text-muted)" stroke-width="0.4" opacity="0.3"/>
-                <polygon points="0,-9 2,-2 -2,-2" fill="var(--color-accent)" opacity="0.5"/>
-                <text x="0" y="-14" text-anchor="middle" fill="var(--color-text-muted)" font-size="6" font-family="Space Grotesk" font-weight="500" opacity="0.4">N</text>
-              </g>
-            </svg>
+            <img src="./parking.png" alt="Illustration of parking layout" class="content-block__image">
           </div>
         </div>
         <div class="content-block__text">
@@ -590,30 +420,12 @@
       <div class="content-block content-block--split" data-animate="fade-up" data-delay="100">
         <div class="content-block__visual">
           <div class="geo-illustration geo-illustration--units">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
-              <!-- Industrial unit blocks -->
-              <rect x="40" y="80" width="90" height="70" rx="4" fill="var(--color-primary)" opacity="0.1" stroke="var(--color-primary)" stroke-width="1.2"/>
-              <rect x="155" y="80" width="90" height="70" rx="4" fill="var(--color-secondary)" opacity="0.1" stroke="var(--color-secondary)" stroke-width="1.2"/>
-              <rect x="270" y="80" width="90" height="70" rx="4" fill="var(--color-accent)" opacity="0.1" stroke="var(--color-accent)" stroke-width="1.2"/>
-              <!-- Unit doors -->
-              <rect x="70" y="120" width="30" height="30" rx="2" fill="var(--color-primary)" opacity="0.15" stroke="var(--color-primary)" stroke-width="0.75"/>
-              <rect x="185" y="120" width="30" height="30" rx="2" fill="var(--color-secondary)" opacity="0.15" stroke="var(--color-secondary)" stroke-width="0.75"/>
-              <rect x="300" y="120" width="30" height="30" rx="2" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.75"/>
-              <!-- Labels -->
-              <text x="85" y="105" text-anchor="middle" fill="var(--color-primary)" font-size="10" font-family="Space Grotesk" font-weight="500" opacity="0.7">Storage</text>
-              <text x="200" y="105" text-anchor="middle" fill="var(--color-secondary)" font-size="10" font-family="Space Grotesk" font-weight="500" opacity="0.7">Workspace</text>
-              <text x="315" y="105" text-anchor="middle" fill="var(--color-accent)" font-size="10" font-family="Space Grotesk" font-weight="500" opacity="0.7">Services</text>
-              <!-- Connecting path -->
-              <line x1="40" y1="180" x2="360" y2="180" stroke="var(--color-border-strong)" stroke-width="1" stroke-dasharray="4 4"/>
-              <!-- Bottom label -->
-              <text x="200" y="220" text-anchor="middle" fill="var(--color-text-muted)" font-size="10" font-family="Space Grotesk" opacity="0.5">Available for Lease &amp; Repurpose</text>
-              <!-- Decorative -->
-              <polygon points="200,250 215,260 215,275 200,285 185,275 185,260" fill="none" stroke="var(--color-primary)" stroke-width="0.75" opacity="0.2"/>
-            </svg>
+            <img src="./6427170d317b013b500ccd99bf94aba2.jpeg" alt="Industrial Units" style="width:100%; height:auto; border-radius:6px; object-fit:cover;"/>
           </div>
         </div>
         <div class="content-block__text">
           <p class="content-block__body">Existing Units are available to lease for plant and storage or with the potential to repurpose, providing workspace or communal services.</p>
+          <p class="content-block__body">For more info, click <a class="rightmove-link" href="https://www.rightmove.co.uk/properties/171439394#/?channel=COM_LET" target="_blank">here</a>.</p>
           <div class="content-block__highlights">
             <div class="highlight-item">
               <div class="highlight-item__icon"><svg viewBox="0 0 24 24" width="20" height="20"><polygon points="12,2 22,8 22,16 12,22 2,16 2,8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
@@ -650,36 +462,62 @@
         <div class="content-block__visual">
           <div class="geo-illustration geo-illustration--hotel">
             <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
-              <!-- Hotel building abstraction -->
-              <rect x="120" y="50" width="160" height="200" rx="6" fill="none" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.4"/>
-              <!-- Floors -->
-              <line x1="120" y1="100" x2="280" y2="100" stroke="var(--color-accent)" stroke-width="0.5" opacity="0.3"/>
-              <line x1="120" y1="150" x2="280" y2="150" stroke="var(--color-accent)" stroke-width="0.5" opacity="0.3"/>
-              <line x1="120" y1="200" x2="280" y2="200" stroke="var(--color-accent)" stroke-width="0.5" opacity="0.3"/>
-              <!-- Windows -->
-              <g opacity="0.5">
-                <rect x="140" y="60" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="180" y="60" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.3" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="220" y="60" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="260" y="60" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.5"/>
+              <defs>
+                <pattern id="hotelMapGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+                  <line x1="0" y1="0" x2="32" y2="0" stroke="var(--color-text-muted)" stroke-width="0.25" opacity="0.16"/>
+                  <line x1="0" y1="0" x2="0" y2="32" stroke="var(--color-text-muted)" stroke-width="0.25" opacity="0.16"/>
+                </pattern>
+              </defs>
 
-                <rect x="140" y="110" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="180" y="110" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.25" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="220" y="110" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="260" y="110" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.3" stroke="var(--color-accent)" stroke-width="0.5"/>
+              <!-- Base map canvas -->
+              <rect width="400" height="300" rx="8" fill="var(--color-bg-card)"/>
+              <rect width="400" height="300" rx="8" fill="url(#hotelMapGrid)"/>
 
-                <rect x="140" y="160" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.25" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="180" y="160" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="220" y="160" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.3" stroke="var(--color-accent)" stroke-width="0.5"/>
-                <rect x="260" y="160" width="20" height="28" rx="2" fill="var(--color-gold)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.5"/>
+              <!-- Background parcel outlines to mimic OS map detail -->
+              <g stroke="var(--color-text-muted)" stroke-width="0.7" opacity="0.28" fill="none">
+                <path d="M 8,38 L 132,30 L 160,56 L 88,90 L 12,82 Z"/>
+                <path d="M 162,24 L 244,22 L 258,52 L 198,76 L 154,62 Z"/>
+                <path d="M 268,18 L 392,16 L 392,92 L 350,98 L 292,72 Z"/>
+                <path d="M 10,106 L 84,96 L 136,118 L 130,170 L 42,178 L 8,154 Z"/>
+                <path d="M 150,94 L 230,90 L 246,132 L 206,176 L 148,162 Z"/>
+                <path d="M 248,96 L 390,92 L 390,190 L 336,210 L 258,188 Z"/>
+                <path d="M 20,194 L 128,186 L 154,230 L 96,282 L 18,270 Z"/>
+                <path d="M 162,188 L 238,182 L 286,220 L 232,284 L 170,278 Z"/>
+                <path d="M 292,196 L 390,192 L 390,286 L 302,292 L 264,244 Z"/>
               </g>
-              <!-- Entrance -->
-              <rect x="180" y="210" width="40" height="40" rx="3" fill="var(--color-primary)" opacity="0.12" stroke="var(--color-primary)" stroke-width="1"/>
-              <!-- Location indicator -->
-              <text x="200" y="280" text-anchor="middle" fill="var(--color-accent)" font-size="11" font-family="Space Grotesk" font-weight="600" opacity="0.6">Hotel Development Opportunity</text>
-              <!-- Decorative link to SZC -->
-              <path d="M 280,150 Q 340,130 380,100" fill="none" stroke="var(--color-secondary)" stroke-width="1" stroke-dasharray="3 3" opacity="0.3"/>
-              <text x="375" y="90" fill="var(--color-secondary)" font-size="9" font-family="Space Grotesk" opacity="0.4">→ SZC</text>
+
+              <!-- Main site polygons inspired by provided plan -->
+              <g>
+                <!-- Darsham Land -->
+                <polygon points="210,48 392,22 392,286 248,284 186,206 188,154" fill="#77BDE8" opacity="0.72" stroke="#2E7FB2" stroke-width="1.4"/>
+
+                <!-- Park and Ride -->
+                <polygon points="8,50 198,50 160,132 112,162 8,128" fill="#E8DDD6" opacity="0.9" stroke="#D56A34" stroke-width="1.2"/>
+
+                <!-- Field 7 -->
+                <polygon points="198,50 246,52 188,154 160,132" fill="#BFE278" opacity="0.92" stroke="#6EA13C" stroke-width="1.2"/>
+
+                <!-- WHF -->
+                <polygon points="112,162 142,156 156,178 126,194 104,184" fill="#B9B7E3" opacity="0.92" stroke="#7A60AF" stroke-width="1.2"/>
+
+                <!-- Orange boundary / access edge -->
+                <path d="M 8,50 L 198,50 L 160,132 L 112,162 L 104,184 L 126,194 L 176,206 L 188,204" fill="none" stroke="#E16B2D" stroke-width="1.4" opacity="0.95"/>
+                <path d="M 188,204 L 192,222 L 178,230" fill="none" stroke="#E16B2D" stroke-width="1.4" opacity="0.95"/>
+              </g>
+
+              <!-- Labels -->
+              <g font-family="Space Grotesk" fill="var(--color-text)" opacity="0.88">
+                <text x="86" y="104" font-size="12" font-weight="500">Park &amp; Ride</text>
+                <text x="196" y="103" font-size="11" font-weight="500">Field 7</text>
+                <text x="246" y="154" font-size="12" font-weight="600" fill="#103B56">Darsham Land</text>
+                <text x="118" y="182" font-size="10" font-weight="600" fill="#4D3A7D">WHF</text>
+              </g>
+
+              <!-- Road baseline -->
+              <path d="M 0,236 Q 88,220 154,220 Q 224,220 400,210" fill="none" stroke="var(--color-text-muted)" stroke-width="2.2" opacity="0.28"/>
+
+              <!-- Caption -->
+              <text x="200" y="292" text-anchor="middle" fill="var(--color-accent)" font-size="10.5" font-family="Space Grotesk" font-weight="600" opacity="0.58">Indicative Land at Darsham Hub</text>
             </svg>
           </div>
         </div>
@@ -725,6 +563,7 @@
         <p class="content-block__body content-block__body--large">
           The team of the Darsham Services Hub work with farmers and landowners in East Suffolk, wishing to diversify and help to meet the housing needs of Sizewell C. We help create custom housing solutions by leveraging industry relationships, expertise and collective purchasing. Our project management extends to deliver operational support for leasing periods and ongoing maintenance and hotel operations.
         </p>
+        <img src="./image.png" alt="Alternative Housing Image" class="content-block__image" data-animate="fade-up" data-delay="150"/>
       </div>
 
       <div class="services-grid" data-animate="fade-up" data-delay="200">
