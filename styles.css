@@ -5,28 +5,28 @@
 
 /* --- Design Tokens --- */
 :root {
-  /* Verdant Neo-Geo palette — field green to architectural geometry */
-  --color-bg:             #0A1210;
-  --color-bg-elevated:    #0F1A16;
-  --color-bg-card:        #132420;
-  --color-surface:        #17291F;
-  --color-border:         rgba(120, 180, 140, 0.10);
-  --color-border-strong:  rgba(120, 180, 140, 0.22);
+  /* Light neo-geo palette */
+  --color-bg:             #FFFFFF;
+  --color-bg-elevated:    #F6FAF7;
+  --color-bg-card:        #FFFFFF;
+  --color-surface:        #F2F7F4;
+  --color-border:         rgba(40, 84, 63, 0.10);
+  --color-border-strong:  rgba(40, 84, 63, 0.20);
 
-  --color-text:           #E4EDE8;
-  --color-text-secondary: #8DA99A;
+  --color-text:           #14231C;
+  --color-text-secondary: #355546;
   --color-text-muted:     #5A7B6A;
 
-  /* Chromatic accents — bold, calculated color blocking */
-  --color-primary:        #3ABB78;        /* Verdant green */
-  --color-primary-glow:   rgba(58, 187, 120, 0.15);
-  --color-primary-deep:   #2A9460;
-  --color-accent:         #E8934A;        /* Warm amber — sunrise over fields */
-  --color-accent-glow:    rgba(232, 147, 74, 0.14);
-  --color-secondary:      #4AA8D4;        /* Suffolk sky blue */
-  --color-secondary-glow: rgba(74, 168, 212, 0.12);
-  --color-tertiary:       #B07ED8;        /* Heather violet */
-  --color-gold:           #D4C057;        /* Wheat gold */
+  /* Keep accents */
+  --color-primary:        #2F9F67;
+  --color-primary-glow:   rgba(47, 159, 103, 0.18);
+  --color-primary-deep:   #267F53;
+  --color-accent:         #D98238;
+  --color-accent-glow:    rgba(217, 130, 56, 0.14);
+  --color-secondary:      #3A92BD;
+  --color-secondary-glow: rgba(58, 146, 189, 0.12);
+  --color-tertiary:       #9A6BC0;
+  --color-gold:           #B79A2D;
 
   /* Typography — architectural, load-bearing */
   --font-display: 'Space Grotesk', system-ui, sans-serif;
@@ -120,7 +120,7 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .nav--scrolled {
-  background: rgba(10, 18, 16, 0.88);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   box-shadow: 0 1px 0 var(--color-border);
@@ -232,22 +232,13 @@ img, svg { display: block; max-width: 100%; }
 .btn--primary {
   background: var(--color-primary);
   color: #fff;
-  box-shadow: 0 4px 20px var(--color-primary-glow);
+  box-shadow: var(--shadow-sm), 0 0 0 1px rgba(255, 255, 255, 0.22) inset;
 }
 .btn--primary:hover {
   background: var(--color-primary-deep);
-  box-shadow: 0 8px 32px rgba(58, 187, 120, 0.3);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(255, 255, 255, 0.28) inset;
   transform: translateY(-2px);
 }
-.btn--primary::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.12) 50%, transparent 60%);
-  transform: translateX(-100%);
-  transition: transform 0.6s var(--ease-smooth);
-}
-.btn--primary:hover::before { transform: translateX(100%); }
 
 .btn--ghost {
   background: transparent;
@@ -467,7 +458,7 @@ img, svg { display: block; max-width: 100%; }
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-md);
   overflow: hidden;
-  background: rgba(19, 36, 32, 0.6);
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(12px);
 }
 
@@ -498,7 +489,7 @@ img, svg { display: block; max-width: 100%; }
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-1) var(--space-3);
-  background: rgba(19, 36, 32, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
@@ -507,6 +498,7 @@ img, svg { display: block; max-width: 100%; }
   color: var(--color-text-secondary);
   animation: labelFloat 5s ease-in-out infinite;
 }
+
 .hero__map-label--1 { top: 12%; right: 8%; animation-delay: 0s; }
 .hero__map-label--2 { bottom: 15%; left: 8%; animation-delay: 2.5s; }
 
@@ -579,17 +571,13 @@ img, svg { display: block; max-width: 100%; }
 .geo-illustration {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  background: rgba(19, 36, 32, 0.4);
+  background: rgba(255, 255, 255, 0.75);
   padding: var(--space-4);
   transition: all var(--transition-base);
 }
 .geo-illustration:hover {
   border-color: var(--color-border-strong);
-  box-shadow: 0 12px 40px rgba(58, 187, 120, 0.06);
-}
-.geo-illustration svg {
-  width: 100%;
-  height: auto;
+  box-shadow: var(--shadow-md);
 }
 
 /* Highlight items */
@@ -675,7 +663,7 @@ img, svg { display: block; max-width: 100%; }
 .service-card:hover {
   border-color: var(--color-border-strong);
   transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25), 0 0 30px var(--color-primary-glow);
+  box-shadow: var(--shadow-lg), 0 0 18px var(--color-primary-glow);
 }
 .service-card:hover::before { opacity: 1; }
 
@@ -730,7 +718,7 @@ img, svg { display: block; max-width: 100%; }
 .team-card:hover {
   border-color: var(--color-border-strong);
   transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 .team-card__header {
@@ -962,7 +950,7 @@ img, svg { display: block; max-width: 100%; }
     left: 0;
     right: 0;
     flex-direction: column;
-    background: rgba(10, 18, 16, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     padding: var(--space-5) var(--space-6);
     gap: var(--space-4);
