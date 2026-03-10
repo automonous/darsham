@@ -991,3 +991,11 @@ img, svg { display: block; max-width: 100%; }
 .rightmove-link {
   text-decoration: underline;
 }
+
+#accommodation .content-block.is-visible {
+    display: flex;
+}
+
+#accommodation img.content-block__image.is-visible {
+    width: 500px;
+}
