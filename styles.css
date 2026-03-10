@@ -986,6 +986,10 @@ img, svg { display: block; max-width: 100%; }
   }
 
   .hero__title { font-size: var(--text-3xl); }
+
+  #accommodation .content-block.is-visible {
+    display: block !important;
+  }
 }
 
 .rightmove-link {
